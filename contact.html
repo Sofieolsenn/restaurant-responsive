@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Homepage / Restaurant EK</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant EK</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a class="linkActive" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+       <section>
+            <form action="mailto:information@restaurantek.dk" method="POST">
+                <section class="information">
+                  <!--address-->
+                  <address>
+                    <p>Guldbergsgade 29N</p>
+                    <p>2200 Copenhagen</p>
+                  </address>
+                  <!--phone number-->
+                  <div>
+                    <a href="tel:+4520825370">Phone no.: <em>20 82 53 70</em></a>
+                  </div>
+                  <!--email-->
+                  <div>
+                    <a href="mailto:information@restaurantek.dk">E-mail: <em>information@restaurantek.dk</em></a>
+                  </div>
+                </section>
+
+                <fieldset>
+                  <legend>Contact form</legend>
+                  <!--name-->
+                  <div>
+                    <label for="fullName">Full name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                  </div>
+                  <!--phone number-->
+                  <div>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+                  <!--email-->
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <!--person numbers-->
+                  <div>
+                    <label for="person">Persons</label>
+                    <input type="number" name="person" id="person" required>
+                  </div>
+                  <!--date and time-->
+                  <div>
+                    <label for="date">Date and time</label>
+                    <input type="date" required>
+                  </div>
+                  <!--Further information-->
+                  <div class="textArea">
+                    <label for="information">Further information</label>
+                    <textarea name="information" id="information"></textarea>
+                  </div>
+                  <button type="submit">Send</button>
+                </fieldset>
+              </form>
+       </section>
+       <figure>
+            <img src="img/map.jpg" alt="maps picture">
+       </figure>
+    </main>
+    <footer>
+        <p>&copy; 2021-2025 EK Development</p>
+    </footer>
+</body>
+</html>

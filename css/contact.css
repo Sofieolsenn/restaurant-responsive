@@ -1,0 +1,82 @@
+@import 'style.css';
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+section {
+    width: 40em;
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        a {
+            text-decoration: none;
+            color: black;
+        
+            em {
+                color: red;
+                font-weight: 600;
+                font-style: normal;
+            }
+        
+        }
+    }
+}
+
+fieldset{
+    padding: 0.5em;
+
+    button {
+        background-color: blue;
+        color: white;
+        padding: 0.5em 2em;
+        border-radius: 2em;
+        border: none;
+        margin-top: 0.5em;
+    }
+
+    .textArea{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+figure {
+    padding: 0.4em;
+    border-radius: 1em;
+    border: 1px solid black;
+    max-width: 700px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+       /* Apply box-sizing: border-box to all elements */
+       * {
+        box-sizing: border-box;
+    }
+
+    section {
+        min-width: 200px;  /* Ensure the main section has a minimum width */
+        width: 100%;        /* Make sure section is responsive */
+    }
+
+    section > form > section {
+        min-width: 200px;   /* Ensure the nested section inside the form has a minimum width */
+        width: 100%;        /* Ensure it takes up full available width */
+        padding: 0.5em;     /* Add padding to prevent overflow */
+        margin: 0;          /* Remove any margin that could cause overflow */
+    }
+  }

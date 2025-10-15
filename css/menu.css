@@ -1,0 +1,54 @@
+@import 'style.css';
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+section {
+    background-color: var(--colorBgMenu);
+    width: 100%; 
+    max-width: 700px; 
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: space-between;
+    gap: 10px;
+
+    .price {
+        background-color: var(--colorTextList);
+        color: white;
+    
+        width: 100px;
+        height: 50px;
+        margin-top: auto;
+    
+        border-radius: 0.4em;
+        font-weight: 700;
+        border: 3px solid var(--colorBgNav); 
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .food-card-text-content {
+        display: flex;
+        flex-direction: column;
+    
+        /* 🔁 CHANGED: Make content area flexible */
+        flex: 1 1 300px; /* allows it to shrink/grow and wrap cleanly */
+    }
+
+    figure > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+

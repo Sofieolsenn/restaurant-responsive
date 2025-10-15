@@ -1,0 +1,74 @@
+@import 'variables.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontText);
+}
+
+img {
+    border-radius: 0.5em;
+}
+
+header, footer {
+    background-color: var(--colorBgHeader);
+    color: var(--colorHeaderText);
+    padding: 1rem 2rem;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    /*make the position fixed here*/
+}
+
+nav {
+    background-color: var(--colorBgNav);
+    padding: 1.5rem 3rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        gap: 3rem;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--colorLinks);
+        line-height: 1;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    a:hover, .linkActive{
+        color: var(--colorLinksActive);
+        transform: scale(1.2);
+        transform-origin: center bottom;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    nav {
+        padding: 1.5rem;
+    }
+    nav > ul {
+        flex-direction: column;
+        gap: 0.5em;
+        text-align: center;
+        li {
+            border-bottom: 2px solid blue;
+        }
+    }
+    li:last-child{
+        border-bottom: none;
+    }
+}
+
+
+

@@ -1,0 +1,26 @@
+/*stylesheet only for variables*/
+/*you can import stylesheet into others through @import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    /*Background color*/
+    --colorBgHeader: #F7E2C3;
+    --colorBgNav: #E2A97B;
+    --colorBgBox: rgb(197, 197, 197);
+    --colorBgMenu: #F7E2C3;
+
+    /*text color*/
+    --colorHeaderText: #00009D;
+    --colorLinks: #00009D;
+    --colorLinksActive: #8d2726;
+    --colorTextList: #D56A68;
+
+    /*button color*/
+
+    /*fonts*/
+    --fontTitle: 'poppins', sans-serif;
+    --fontText: 'poppins', sans-serif;
+}
+

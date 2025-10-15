@@ -1,0 +1,14 @@
+
+The use of semantic HTML, especially in regard to landmark elements
+
+Exclusive use of relative paths
+
+Use of HTML5 syntax rather than XHTML syntax
+
+Use of character entities
+
+Use of CSS custom properties for all colours and font families
+
+Avoidance of pixel units in favour of relative units when possible
+
+Loading of fonts in CSS rather than HTML
